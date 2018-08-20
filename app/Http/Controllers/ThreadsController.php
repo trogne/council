@@ -70,7 +70,7 @@ class ThreadsController extends Controller
                     $query->where('archived', false);
                 })
             ],
-            //'g-recaptcha-response' => ['required', $recaptcha] //https://github.com/JeffreyWay/council/issues/192
+            //'g-recaptcha-response' => ['required', $recaptcha] //https://github.com/JeffreyWay/council/issues/192 //no recap form if within modal
         ]);
 
         $thread = Thread::create([
