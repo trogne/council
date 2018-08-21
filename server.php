@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Laravel - A PHP Framework For Web Artisans.
+ * MAX Laravel - A PHP Framework For Web Artisans.
  *
  * @author   Taylor Otwell <taylor@laravel.com>
  */
