@@ -17,6 +17,8 @@
 <div class="mb-4">
     <label for="archived" class="tracking-wide uppercase text-grey-dark text-xs block pb-2">Status</label>
 
+    <!--<input type="radio" name="archived" id="archived" {{ old('archived', $channel->archived) ? 'checked' : '' }}>Archive</input>-->
+    <!--<input type="checkbox" name="archived" id="archived" {{ old('archived', $channel->archived) ? 'checked' : '' }}>Archive</input>-->
     <select name="archived" id="archived" class="form-control">
         <option value="0" {{ old('archived', $channel->archived) ? '' : 'selected' }}>Active</option>
         <option value="1" {{ old('archived', $channel->archived) ? 'selected' : '' }}>Archived</option>

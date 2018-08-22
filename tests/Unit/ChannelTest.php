@@ -17,6 +17,15 @@ class ChannelTest extends TestCase
         parent::setUp();
 
         EloquentCollection::macro('assertEquals', function ($items) {
+            //// $items = arry of all Channels
+            //dd(get_class($items)); //NO, it's an array
+            //dd(get_class($this)); //Illuminate\Database\Eloquent\Collection
+            //dd(get_class($items[0])); //App\Channel
+            //dd(get_class($this[0])); //App\Channel
+
+            //dd(get_class($this->zip($items))); //Illuminate\Support\Collection
+            //dd(count($this->zip($items)[0])); //2 !!!
+            
             Assert::assertEquals(count($this), count($items));
 
             $this->zip($items)->each(function ($pair) {

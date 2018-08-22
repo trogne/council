@@ -85,6 +85,7 @@ class ChannelAdministrationTest extends TestCase
         $this->assertFalse($channel->archived);
 
         $this->patch(
+            //route('admin.channels.update', $channel), //works too
             route('admin.channels.update', ['channel' => $channel->slug]),
             [
                 'name' => 'altered',
