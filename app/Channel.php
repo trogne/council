@@ -20,9 +20,8 @@ class Channel extends Model
         'archived' => 'boolean'
     ];
 
-    
     //protected $withCount = ['threads']; //works too
-    
+
     /**
      * Boot the channels model.
      */
@@ -37,10 +36,10 @@ class Channel extends Model
         static::addGlobalScope('sorted', function ($builder) {
             $builder->orderBy('name', 'asc');
         });
-        
-        static::addGlobalScope('threadsCountDeMiko', function ($builder){
+
+        static::addGlobalScope('threadsCountDeMiko', function ($builder) {
             $builder->withCount('threads');
-        });        
+        });
     }
 
     /**
@@ -89,10 +88,10 @@ class Channel extends Model
     {
         return (new static)->newQueryWithoutScope('active');
     }
-    
-    ////works too : 
+
+    ////works too :
     //public function getThreadsCountAttribute()
     //{
     //    return $this->threads->count();
-    //}    
+    //}
 }
