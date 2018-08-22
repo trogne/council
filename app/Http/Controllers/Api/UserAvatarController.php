@@ -21,7 +21,7 @@ class UserAvatarController extends Controller
         Storage::disk('public')->delete(auth()->user()->getOriginal('avatar_path'));
 
         auth()->user()->update([
-            'avatar_path' => 'z'.request()->file('avatar')->store('avatars', 'public') //adding "z" because  mklink /j public\avatars storage\app\public\avatars   NOT WORKING, WHY?!? so with a z :  mklink /j public\zavatars storage\app\public\avatars
+            'avatar_path' => request()->file('avatar')->store('avatars', 'public')
         ]);
 
         return response([], 204);
