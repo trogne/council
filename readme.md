@@ -1,6 +1,6 @@
 # Council [![Build Status](https://travis-ci.org/trogne/council.svg?branch=master)](https://travis-ci.org/trogne/council)
 
-This is an open source forum that was built and maintained at Laracasts.com.
+MIX This is an open source forum that was built and maintained at Laracasts.com.
 
 ## Installation
 
