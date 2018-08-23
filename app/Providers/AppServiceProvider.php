@@ -14,6 +14,10 @@ class AppServiceProvider extends ServiceProvider
     public function boot()
     {
         \Validator::extend('spamfree', 'App\Rules\SpamFree@passes');
+
+        //\DB::listen(function ($e) { //triggered anytime a sql query is run
+        //    info($e->sql); // \Log::info($e->sql)
+        //});        
     }
 
     /**
