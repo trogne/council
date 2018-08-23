@@ -17,7 +17,7 @@ class AppServiceProvider extends ServiceProvider
 
         //\DB::listen(function ($e) { //triggered anytime a sql query is run
         //    info($e->sql); // \Log::info($e->sql)
-        //});        
+        //});
     }
 
     /**
