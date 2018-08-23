@@ -13,6 +13,6 @@ return [
     ],
 
     'pagination' => [
-        'perPage' => 25
+        'perPage' => 10
     ]
 ];

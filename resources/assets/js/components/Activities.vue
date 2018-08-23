@@ -20,6 +20,7 @@
 export default {
     name: 'Activities',
 
+    //props: ['user'], //works too
     props: {
         user: {
             type: Object,
