@@ -38,9 +38,10 @@ class Channel extends Model
             $builder->orderBy('name', 'asc');
         });
         
-        static::addGlobalScope('threadsCountDeMiko', function ($builder){
-            $builder->withCount('threads');
-        });        
+        ////dans ChannelsController (withCount)
+        //static::addGlobalScope('threadsCountDeMiko', function ($builder){
+        //    $builder->withCount('threads');
+        //});        
     }
 
     /**

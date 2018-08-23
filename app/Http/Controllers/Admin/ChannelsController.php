@@ -15,7 +15,9 @@ class ChannelsController extends Controller
      */
     public function index()
     {
-        $channels = Channel::withArchived()->with('threads')->get();
+        //$channels = Channel::withArchived()->with('threads')->get();
+        $channels = Channel::withArchived()->withCount('threads')->get();
+        //dd($channels->first()->toArray());
 
         return view('admin.channels.index', compact('channels'));
     }
