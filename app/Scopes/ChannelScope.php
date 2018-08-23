@@ -2,8 +2,8 @@
 
 namespace App\Scopes;
 
-use Illuminate\Database\Eloquent\Scope;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Scope;
 use Illuminate\Database\Eloquent\Builder;
 
 class ChannelScope implements Scope
@@ -18,7 +18,7 @@ class ChannelScope implements Scope
     //    //$this->user = $user;
     //    //$this->column = $column;
     //}
-    
+
     /**
      * Apply the scope to a given Eloquent query builder.
      *
