@@ -11,3 +11,8 @@ before_script:
 cache:
   directories:
     - vendor
+
+notifications:
+  email:
+    on_success: never
+    on_failure: never
